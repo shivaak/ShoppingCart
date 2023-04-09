@@ -25,8 +25,13 @@ public class InventoryServiceApplication {
 					.skuCode("Iphone 15")
 					.quantity(500).build();
 
+			Inventory inventory3 = Inventory.builder()
+					.skuCode("Iphone 16")
+					.quantity(0).build();
+
 			inventoryRepository.save(inventory1);
 			inventoryRepository.save(inventory2);
+			inventoryRepository.save(inventory3);
 		};
 	}
 
